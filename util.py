@@ -86,7 +86,7 @@ def load_saved_artifacts():
     global __trans
     global __owner
 
-    with open("./models/app.json", "r") as f:
+    with open("./app.json", "r") as f:
         __data_columns = json.load(f)['data_columns']
         __company = __data_columns[7:22]
         __models = __data_columns[22:53]
