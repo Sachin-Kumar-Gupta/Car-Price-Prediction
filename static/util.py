@@ -87,7 +87,7 @@ def load_saved_artifacts():
     global __owner
 
     with open("./static/columns.json", "r") as f:
-        __data_columns = json.load(f)['data_columns']
+        __data_columns = json.load(f)["data_columns"]
         __company = __data_columns[7:22]
         __models = __data_columns[22:53]
         __fuel = __data_columns[:2]
