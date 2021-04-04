@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 
 __company = None
-__models = None
+__Models = None
 __fuel = None
 __owner = None
 __trans = None
@@ -81,7 +81,7 @@ def load_saved_artifacts():
     print("loading saved artifacts...start")
     global  __data_columns
     global __company
-    global __models
+    global __Models
     global __fuel
     global __trans
     global __owner
@@ -89,7 +89,7 @@ def load_saved_artifacts():
     with open("./JSON/columns.json", "r") as f:
         __data_columns = json.load(f)['data_columns']
         __company = __data_columns[7:22]
-        __models = __data_columns[22:53]
+        __Models = __data_columns[22:53]
         __fuel = __data_columns[:2]
         __trans = __data_columns[2:4]
         __owner = __data_columns[4:7]
@@ -103,7 +103,7 @@ def load_saved_artifacts():
 def get_company_names():
     return __company
 def get_models_names():
-    return __models
+    return __Models
 def get_fuel_names():
     return __fuel
 def get_trans_names():
