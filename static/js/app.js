@@ -52,8 +52,8 @@ function onClickedEstimatePrice() {
       Fuel_Type: Fuel,
       Transmission: Trans,
       Owner_Type: Owner,
-      Company: Company.value,
-      Model: Model.value
+      Company: Company,
+      Model: Model
   },function(data, status) {
       console.log(data.estimated_price);
       estPrice.innerHTML = "<h2>" + data.estimated_price.toString() + " Lakh</h2>";
