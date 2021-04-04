@@ -22,3 +22,5 @@ Werkzeug==1.0.1
 wincertstore==0.2
 jsonify==0.5
 gunicorn==19.9.0
+json
+responses
